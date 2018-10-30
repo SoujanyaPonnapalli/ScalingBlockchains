@@ -2,13 +2,13 @@
 
 <i> Scalability is one of the major limitations of Blockchains. This repository briefly summarizes Blockchains and the ongoing research on increasing the scalability of Blockchains. </i>
 
-## Blockchains ##
+# Blockchains
 
 Blockchains are used for building peer to peer payment systems, without the involvement of a central authority. Traditionally in centralized payment systems, a trusted third party is responsible for verifying, executing and committing every transaction to prevent double spending. Blockchains are introduced in [How to Time-Stamp a Digital Document](https://www.anf.es/pdf/Haber_Stornetta.pdf) and are later used in [Bitcoin: A Peer-to-Peer Electronic Cash System](https://www.bitcoin.org/bitcoin.pdf) to prevent double spending in an untrusted, purely peer-to-peer payment system.
 
 <i> Let's take a closer look at the design and architecture of Blockchains based application platforms. </i>
 
-## Design and Architecture ##
+# Design and Architecture
 
 <i> We will be looking at the architecture of [Ethereum](https://github.com/ethereum), a blockchain based application platform for building distributed decentralized applications like cryptocurrencies ([Bitcoin](https://bitcoin.org/en/), [Ethereum](https://www.ethereum.org)) or [cryptokitties](https://www.cryptokitties.co). </i>
 
@@ -29,7 +29,7 @@ Full nodes concurrently mining new blocks can end up building on top of same pa
 
 Thus, the history of transactions are maintained by every participant as an immutable chain of blocks, each block containing a list of transactions. So every peer in the network can verify a new transaction, without having to rely on a trusted third party. All the peers in the network agree on the history of transactions and agree on the same history as long as a majority of the peers in the network are not compromised. To conclude, with these key ideas, Blockchains are used to design cryptographically secure, trustless, peer to peer payment system.
 
-## Scalability ##
+# Scalability
 
 <i> Blockchain Scalability is limited. <i>
 
