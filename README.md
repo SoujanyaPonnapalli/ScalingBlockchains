@@ -60,11 +60,11 @@ The efforts towards scaling blockchains are placed along three axes. Papers prop
 
 | Paper         | Throughput   | Txn Confirmation Latency |
 | ------------- | ------------ | -----------------|
-| Algorand      | ~ 125×       |  ~ 1 minute      |
-| Conflux       | ~ 6000       | 4.5 - 7.5 minutes|
-| HoneyBadger   | ~ 1500       |  < 6 minutes     |
-| HyperLedger   | ~ 2500       | 0.3 - 0.5 seconds|
-| OmniLedger    | ~ 1000       | ~ 1 minute       |
+| [Algorand](https://dl.acm.org/citation.cfm?id=3132757)              | ~ 125×       |  ~ 1 minute      |
+| [Conflux](https://arxiv.org/abs/1805.03870)                         | ~ 6000       | 4.5 - 7.5 minutes|
+| [HoneyBadger](https://dl.acm.org/citation.cfm?id=2978399)           | ~ 1500       |  < 6 minutes     |
+| [HyperLedger](https://dl.acm.org/citation.cfm?id=3190538)           | ~ 2500       | 0.3 - 0.5 seconds|
+| [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) | ~ 1000       | ~ 1 minute       |
 
 **Note:** The results are from the papers for a configuration with around 100 nodes. However, the numbers are presented for a direct comparison between the systems, but for an average throughput and latency estimates of the current state-of-the art systems.
 
