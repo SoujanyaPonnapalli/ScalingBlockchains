@@ -60,7 +60,7 @@ The efforts towards scaling blockchains are placed along three axes. Papers prop
 
 ## Quick Summary ##
 
-*Let's take a quick look at the major contributors towards scaling Blockchains.*
+*Let's take a quick look at the major contributions towards scaling Blockchains.*
 
 | Paper         | Throughput   | Txn Confirmation Latency |
 | ------------- | ------------ | -----------------|
@@ -70,7 +70,7 @@ The efforts towards scaling blockchains are placed along three axes. Papers prop
 | [HyperLedger](https://dl.acm.org/citation.cfm?id=3190538)           | ~ 2500       | 0.3 - 0.5 seconds|
 | [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) | ~ 1000       | ~ 1 minute       |
 
-**Note:** The results are from the papers for a configuration with around 100 nodes. However, the numbers are not presented for a direct comparison between the systems, but for an average throughput and latency estimates of the current state-of-the art systems.
+**Note:** The results are from the papers for a configuration with around 100 nodes. However, the numbers are not presented for a direct comparison between the systems, but for an average throughput and latency estimates of the current state-of-the-art.
 
 ## Details ##
 
