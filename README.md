@@ -13,7 +13,7 @@
 
 # Blockchains
 
-Blockchains are widely used for building peer to peer payment systems, without the involvement of a centralized authority. Traditionally in a centralized payment system, a trusted third party is responsible for verifying, executing and committing every transaction to prevent double spending. Blockchains are introduced in [How to Time-Stamp a Digital Document](https://www.anf.es/pdf/Haber_Stornetta.pdf) and are later used in [Bitcoin: A Peer-to-Peer Electronic Cash System](https://www.bitcoin.org/bitcoin.pdf) to prevent double spending in an untrusted, purely peer-to-peer payment system.
+Blockchains are widely used for building peer to peer payment systems, without the involvement of a centralized authority. Traditionally in a centralized payment system, a trusted third party is responsible for verifying, executing and committing every transaction to prevent [double spending](https://en.wikipedia.org/wiki/Double-spending). Blockchains are introduced in [How to Time-Stamp a Digital Document](https://www.anf.es/pdf/Haber_Stornetta.pdf) and are later used in [Bitcoin: A Peer-to-Peer Electronic Cash System](https://www.bitcoin.org/bitcoin.pdf) to prevent double spending in an untrusted, purely peer-to-peer payment system.
 
 *Let's take a closer look at the design and architecture of Blockchains based application platforms.*
 
