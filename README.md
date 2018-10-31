@@ -68,7 +68,7 @@ The efforts towards scaling blockchains are placed along three axes. Papers prop
 
 **Note:** The results are from the papers for a configuration with around 100 nodes. However, the numbers are presented for a direct comparison between the systems, but for an average throughput and latency estimates of the current state-of-the art systems.
 
-## Other Details ##
+## Details ##
 
 There is a lot of interesting ongoing work on analyzing different attacks and the security of Blockchains, proposing applications of Blockchains in various fields and so on... However, these are not a part of the current study.
 
