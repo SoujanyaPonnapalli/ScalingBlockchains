@@ -1,4 +1,4 @@
-# My Blockchain Page
+# Research on Scaling Blockchains
 
 *Scalability is one of the major limitations of Blockchains. This repository briefly summarizes Blockchains and the ongoing research on increasing the scalability of Blockchains.*
 
