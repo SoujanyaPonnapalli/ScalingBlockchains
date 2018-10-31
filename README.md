@@ -33,7 +33,7 @@ Blockchains store the history of transactions so that every full node in the Eth
 
 *Full nodes behave as replicated state machines, transitioning to new states on the arrival of new blocks.*
 
-> **Example:**  
+**Example:**  
 > Assume that genesis initializes two user accounts A and B with 10 eth each (eth stands for Ether, where 1 Ether is approx 192 USD). Consider a new transaction where user A transfers 5 eth to user B. Full nodes propagate this new transaction to every other full node in the network. Full nodes attempt to solve the cryptographic puzzle. Once a full node solves the puzzle, it creates a new block B1 with new transactions. Assuming B1 has only one transaction, where user A sends 5 eth to user B, full node verifies the transaction: checks if user A has 5eth and if user B has a valid account then, executes the transaction and updates the current state of Ethereum: updates user A's account to have 5 eth and user B's account to have 15 eth. The block B1 contains a list of transactions, a hash of its parent block (genesis) and the updated state root hash. The block B1 is then broadcasted to all the other full nodes. Full nodes verify the proof-of-work of B1, verify and execute the transactions and update their local state and append B1 to genesis. Thus, after a majority of nodes build B1 on top of genesis, the blockchain now has two blocks - genesis and B1.
 
 **Consensus:**  
