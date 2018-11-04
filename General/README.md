@@ -1,7 +1,7 @@
-# General Topics in Blockchains
+# General Topics
 
-This directory summarizes papers which propose ideas towards scaling blockchains, which do not fall into either scalable
-consensus or scalable architectures for Blockchains
+This directory summarizes papers which propose general ideas towards scaling blockchains, which are neither
+scalable consensus protocols nor architectures for scalable Blockchains
 
 ## Table of contents
 
