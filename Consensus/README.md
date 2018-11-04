@@ -1,6 +1,6 @@
 # Consensus
 
-This folder summarizes papers which propose scalable alternatives to proof-of-work or Nakamoto consensus aiming at
+This directory summarizes papers which propose scalable alternatives to proof-of-work or Nakamoto consensus aiming at
 scaling Blockchains to handle around thousands of transactions per second.
 
 ## Table of Contents
