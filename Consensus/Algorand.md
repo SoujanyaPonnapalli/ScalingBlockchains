@@ -1,8 +1,8 @@
 # [Algorand](https://dl.acm.org/citation.cfm?id=3132757):  Scaling Byzantine Agreements for Cryptocurrencies. 
 
 Algorand introduces a scalable cryptocurrency with transaction confirmation latencies on the order of a minute, using a new 
-Byzantine Agreement Protocol for consensus. To achieve scalable consensus, Byzantine Agreement is performed amongst only
-a few participants, selected using a novel mechanism based Verifiable Random Functions.
+Byzantine Agreement Protocol for consensus. To achieve scalable consensus, Byzantine Agreement is performed amongst
+a few users, selected using a novel mechanism based Verifiable Random Functions.
 
 ## Problems Identified
 
@@ -24,9 +24,9 @@ even if some of the users are malicious and the network is temporarily partition
 
 ## Proposed Solution
 
-Algorand relys on Byzantine agreement for consensus, to eliminate the possibility of forks and reduce transaction confirmation
-latencies. Algorand uses a scalable Byzantine agreement protocol **BA⋆**, that uses verifiable random functions (VRFs) to 
-randomly select users to particpate in consensus in a private, non-interactive way.
+Algorand relys on Byzantine agreement for consensus, to eliminate the possibility of forks and to reduce the transaction 
+confirmation latencies. Algorand uses a scalable Byzantine agreement protocol **BA⋆**, that uses verifiable random functions
+(VRFs) to randomly select users that particpate in consensus, in a private, non-interactive way.
 
 **Assumptions**
 
@@ -42,8 +42,7 @@ a day after the asynchrony period.
 
 **Solution Overview**
 
-- Algorand grows the blockchain in asynchronous rounds. For every round, users which can propose a new block are selected at
-random using cryptographic sortitions, and are assigned priorities.
+- Algorand grows the blockchain in asynchronous rounds. In a round, users are selected at random (using cryptographic sortitions), to propose blocks and are assigned priorities.
 - Each selected user computes a block of pending transactions and propagates the block along with a proof of their priority
 - Algorand uses **BA⋆**, to reach consensus on one block from these proposed, pending blocks.
 - Every user invokes **BA⋆** with the highest priority block they received
@@ -52,8 +51,8 @@ random using cryptographic sortitions, and are assigned priorities.
   committee members for that step. 
   - Committee members then broadcast a message which includes their proof of selection.
   -  Execution of **BA⋆** happens in two phases.
-      1) **BA⋆** reduces the problem of agreeing on a block to agreement on one of two options. 
-      2) **BA⋆** reaches agreement on one option, either agreeing on a proposed block or on an empty block.
+      - **BA⋆** reduces the problem of agreeing on a block to agreement on one of two options. 
+      - **BA⋆** reaches agreement on one option, either agreeing on a proposed block or on an empty block.
   - These steps repeat until, in some step of **BA⋆**, enough users in the committee reach consensus.
 - **BA⋆** can produce two kinds of consensus:
   - *Final consensus:* Any other user that reaches final or tentative consensus in the same round must agree on the same block
