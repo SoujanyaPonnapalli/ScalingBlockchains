@@ -24,12 +24,69 @@ even if some of the users are malicious and the network is temporarily partition
 
 ## Proposed Solution
 
+Algorand relys on Byzantine agreement for consensus, to eliminate the possibility of forks and reduce transaction confirmation
+latencies. Algorand uses a scalable Byzantine agreement protocol **BA⋆**, that uses verifiable random functions (VRFs) to 
+randomly select users to particpate in consensus in a private, non-interactive way.
+
+**Assumptions**
+
+Algorand makes the following assumptions:
+- The fraction of money held by honest users is greater than 2/3. 
+- An adversary cannot corrupt a large number of users that hold a significant fraction of the money.
+- *(To make progress)* >95% of the users can send messages that will be received >95% of the users within a defined time bound: strong synchrony (regardless of the strong synchrony assumptions)
+and network partitions are not possible.
+- *(To ensure that all the users agree on the same set of transactions)* Network can be asynchronous: entirely controlled by 
+the adversary, for a bounded period of time, at most 1 day or 1 week, but is strongly synchronous for at least a few hours or 
+a day after the asynchrony period.
+- *(To make progress)* Assumes loosely synchronized clocks across all users, to recover from an asynchrony period
+
+**Solution Overview**
+
+- Algorand grows the blockchain in asynchronous rounds. For every round, users which can propose a new block are selected at
+random using cryptographic sortitions, and are assigned priorities.
+- Each selected user computes a block of pending transactions and propagates the block along with a proof of their priority
+- Algorand uses **BA⋆**, to reach consensus on one block from these proposed, pending blocks.
+- Every user invokes **BA⋆** with the highest priority block they received
+- **BA⋆** executes in repeated steps. 
+  - Each step begins with users executing cryptographic sortitions and checking if they have been selected as 
+  committee members for that step. 
+  - Committee members then broadcast a message which includes their proof of selection.
+  -  Execution of **BA⋆** happens in two phases.
+      1) **BA⋆** reduces the problem of agreeing on a block to agreement on one of two options. 
+      2) **BA⋆** reaches agreement on one option, either agreeing on a proposed block or on an empty block.
+  - These steps repeat until, in some step of **BA⋆**, enough users in the committee reach consensus.
+- **BA⋆** can produce two kinds of consensus:
+  - *Final consensus:* Any other user that reaches final or tentative consensus in the same round must agree on the same block
+  - *Tentaive consensus:* Other users may have reached tentative consensus on a different block
+  (as long as no user reached final consensus).
+- Tentative consensus is possible in only in two scenarios:
+  - If a small portion of the network is controlled by the adversary, it may with small probability cause **BA⋆** to 
+  reach tentative consensus on a block. However, in a few rounds Algorand will reach final consensus on a successor block, 
+  and thus confirm the earlier blocks and transactions.
+  - If the entire network is controlled by the adversary, multiple forks can be formed, splitting the users into different 
+  groups preventing **BA⋆** to reach consensus in the further rounds. To recover liveness, Algorand periodically invokes BA⋆ 
+  to reach consensus on which fork should be used going forward. As the adversary cannot control the entire network 
+  indefinitely, Algorand eventually reaching consensus on one fork and hence makes progress.
+
+*For further details please read the paper*
+
+**Challenges**
+
+Algorand faces three challenges. 
+- Algorand must avoid [sybil attacks](https://coincentral.com/sybil-attack-blockchain/), where an adversary creates many pseudonyms to influence the Byzantine agreement protocol. 
+- Second, BA⋆ must scale far higher than the scale at which the state-of-the-art Byzantine agreement protocols operate. 
+- Finally, Algorand must be resilient to DOS attacks, and should operate even if an adversary disconnects some of the users
+
+Algorand tackles these challenges using different techniques. It proposes **weighted users** to curb sybil attacks, 
+consensus by **selected committee** for achieving high scalability, **cryptographic sortitions** for avoiding adversaries 
+to target committee members and **pariticpant replacement** to avoid adversaries targetting committee members 
+once they send their messages.
 
 ## Related Work
 
 Algorand is compared with the other cyrptocurrencies which use *Byzantine Fault Tolerance Protocols (BFT)* for consensus.
 BFT protocols have limited scalability, require determining a fixed set of servers upfront, opening up the protocols to 
-[sybil attacks](https://coincentral.com/sybil-attack-blockchain/).
+sybil attacks.
 
 - **HoneyBadger**: Honey Badger uses BFT by designating a set of servers to be in charge of consensus on a set of approved 
 transactions. The downsides of the design are:
@@ -53,4 +110,7 @@ the leader loses his money.
   - Some proof-of-stake cryptocurrencies require a master key to periodically sign the correct branch to mitigate forks, raising
   significant trust concerns.
 
-## Highlights
+## Evaluation
+
+Algorand is evaluated on 1000 Amazon EC2 virtual machines, geographically distributed across 20 major cities around the world. 
+Bandwidth of each user is capped at 20Mbps and the money is equally distributed amongst the users.
