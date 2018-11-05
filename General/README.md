@@ -7,4 +7,4 @@ scalable consensus protocols nor architectures for scalable Blockchains
 
 The following papers are summarized.
 
-1. [GHOST](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Others/GHOST.md)
+1. [GHOST](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/General/GHOST.md)
