@@ -1,7 +1,7 @@
 # Scalable Architectures
 
 This directory summarizes papers which propose alternative architectures to Bitcoin or Ethereum with 
-a goal of scaling Cryptocurrencies/Blockchains.
+the goal of scaling Cryptocurrencies or Blockchains.
 
 ## Table of Contents
 
