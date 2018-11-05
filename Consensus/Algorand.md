@@ -111,8 +111,9 @@ the leader loses his money.
 
 ## Evaluation
 
-Algorand is evaluated on 1000 Amazon EC2 virtual machines, geographically distributed across 20 major cities around the world. 
-Bandwidth of each user is capped at 20Mbps and the money is equally distributed amongst the users. Algorand achieves around 125x the throughput of Bitcoin, which is around 875 transactions per second.
+- Algorand is evaluated on 1000 Amazon EC2 virtual machines, distributed across 20 major cities around the world. 
+- Bandwidth of each user is capped at 20Mbps and the money is equally distributed amongst the users.
+- Algorand achieves around 125x the throughput of Bitcoin, which is around 875 transactions per second.
 
 ## Results from the paper
 
