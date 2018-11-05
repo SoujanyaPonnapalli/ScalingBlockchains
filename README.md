@@ -57,7 +57,7 @@ The efforts towards scaling blockchains are placed along three axes. Papers prop
   
 1. Blockchain Architecture  
 2. Scalable Consensus
-3. Others  
+3. General Ideas in Blockchains  
 
 ## Quick Summary ##
 
