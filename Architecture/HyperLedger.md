@@ -16,6 +16,8 @@ In the state-of-the-art permissionless blockchains with order-execute architectu
 - Smart contracts are executed on all peers without any confidentiality
 - To prevent non-deterministic code, smart contracts are written in domain specific languages, limiting their adoption
 
+![order-execute](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Images/HyperLedger/order-execute.png)
+
 ## Proposed Solution
 
 Fabric introduces the execute-order-validate blockchain architecture. To implement this architecture, Fabric contains:
@@ -27,8 +29,22 @@ container environment.
 - *Blockchain*: Each peer locally maintains the ledger in the form of the append-only blockchain and as a snapshot of the most 
 recent state in a key-value store.
 
+![execute-order-validate](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Images/HyperLedger/execute-order-validate.png)
+
+![Fabric](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Images/HyperLedger/Fabric.png)
+
+<!--Architecture Overview: 
+
+The three phase execute-order-validate architecture and the transaction flow is as follows.
+- 
+
+![Flow](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Images/HyperLedger/Flow.png)
+!-->
+
 For more details on the trust and fault model and individual components of Fabric, please refer the [paper](https://dl.acm.org/citation.cfm?id=3190538). 
 
 ## Related Work
+
+Tendermint, Quorum and Chain are all permissioned blockchain variants with the order-execute architecture. Ethereum on the other hand is the permissionless variant with order-execute architecture. Most of the current state-of-the-art Bitcoin, Ethereum, ZeroCash have the order-execute architecture, inheriting its limitations.
 
 ## Evaluation
