@@ -14,13 +14,13 @@
 
 # Blockchains
 
-Blockchains are widely used for building peer to peer payment systems, without the involvement of a centralized authority. Traditionally in a centralized payment system, a trusted third party is responsible for verifying, executing and committing every transaction to prevent [double spending](https://en.wikipedia.org/wiki/Double-spending). Blockchains are introduced in [How to Time-Stamp a Digital Document](https://www.anf.es/pdf/Haber_Stornetta.pdf) and are later used in [Bitcoin: A Peer-to-Peer Electronic Cash System](https://www.bitcoin.org/bitcoin.pdf) to prevent double spending in an untrusted, purely peer-to-peer payment system.
+Blockchains are widely used for building peer to peer payment systems, without the involvement of a centralized authority. Traditionally in a centralized payment system, a trusted third party is responsible for verifying, executing and committing every transaction to prevent [double spending](https://en.wikipedia.org/wiki/Double-spending). Blockchains are introduced in [How to Time-Stamp a Digital Document](https://www.anf.es/pdf/Haber_Stornetta.pdf) and are later used in [Bitcoin: A Peer-to-Peer Electronic Cash System](https://www.bitcoin.org/bitcoin.pdf) ([Bitcoin](https://bitcoin.org/en/)), to prevent double spending in an untrusted, purely peer-to-peer payment system.
 
 *Let's take a closer look at the design and architecture of Blockchains based application platforms.*
 
 # Design and Architecture
 
-*We will be looking at the architecture of [Ethereum](https://github.com/ethereum), a blockchain based application platform for building distributed decentralized applications like cryptocurrencies ([Bitcoin](https://bitcoin.org/en/), [Ethereum](https://www.ethereum.org)) or [cryptokitties](https://www.cryptokitties.co).*
+*We will be looking at the architecture of [Ethereum](https://github.com/ethereum), a blockchain based application platform for building distributed decentralized applications like cryptocurrencies ([Ethereum](https://www.ethereum.org)) or [cryptokitties](https://www.cryptokitties.co).*
 
 **Network:**  
 A distributed peer-to-peer network of participating nodes compose the Ethereum network. Nodes with different functionalities ([light nodes](https://github.com/ethereum/wiki/wiki/Light-client-protocol), full nodes etc...) are connected without any hierarchy. However, nodes storing the entire blockchain and capable of extending the blockchain (by creating new blocks) are termed "full nodes". Full nodes propagate information (new transactions and/or blocks) via variants of Gossip protocol. Every full node connects with a set of peers and stores the entire blockchain and its state.
