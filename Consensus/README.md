@@ -11,4 +11,4 @@ scaling Blockchains to handle around thousands of transactions per second.
 <!-- 4. [HoneyBadger](https://dl.acm.org/citation.cfm?id=2978399) --> 
 <!-- 4. [Inclusive Blockchains](https://fc15.ifca.ai/preproceedings/paper_101.pdf)--->
 
-Nextup: [HoneyBadger](https://dl.acm.org/citation.cfm?id=2978399)
+Next up: [HoneyBadger](https://dl.acm.org/citation.cfm?id=2978399)
