@@ -1,8 +1,48 @@
 # Research on Scaling Blockchains
 
-*Scalability is one of the major limitations of Blockchains. This repository briefly summarizes Blockchains and the ongoing research on increasing the scalability of Blockchains.*
+*Scalability is one of the major limitations of Blockchains. This repository briefly summarizes Blockchains and the ongoing research on increasing the scalability of Blockchains.* 
 
-## Table of Contents ##
+This repository summarizes the papers aiming at scaling blockchains.
+
+## Repository Contents ##
+
+The efforts towards scaling blockchains are placed along three axes. Papers proposing new architectures for Blockchains are 
+summarized in the Architecture directory. Papers proposing efficient and scalable alternatives to Nakamoto 
+consensus are summarized under the Consensus directory. Finally, papers proposing general ideas and 
+alternatives to increase the throughput of the Blockchains are summarized in the General sub directory.
+
+Here's the list of papers that are summarized:
+- [Blockchain Architecture](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Architecture)
+  - [Hyperledger](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Architecture/HyperLedger.md)
+- [Scalable Consensus](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Consensus)
+  - [Algorand](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Algorand.md)
+  - [Bitcoin-NG](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/BitcoinNG.md)
+  - [Conflux](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Conflux.md)
+- [General Ideas in Blockchains](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/General)
+  - [GHOST](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/General/GHOST.md)
+
+## Quick Summary ##
+
+*Let's take a quick look at the major contributions towards scaling Blockchains.*
+
+| Paper         | Throughput   | Txn Confirmation Latency |
+| ------------- | ------------ | -----------------|
+| [Algorand](https://dl.acm.org/citation.cfm?id=3132757)              | ~  875       |  ~ 1 minute      |
+| [Conflux](https://arxiv.org/abs/1805.03870)                         | ~ 6000       | 4.5 - 7.5 minutes|
+| [HoneyBadger](https://dl.acm.org/citation.cfm?id=2978399)           | ~ 1500       |  < 6 minutes     |
+| [HyperLedger](https://dl.acm.org/citation.cfm?id=3190538)           | ~ 2500       | 0.3 - 0.5 seconds|
+| [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) | ~ 1000       | ~ 1 minute       |
+
+**Note:** The results are from the papers for a configuration with around 100 nodes. However, the numbers are not presented for a direct comparison between the systems, but for an average throughput and latency estimates of the current state-of-the-art.
+
+## Details ##
+
+There is a lot of interesting ongoing work on analyzing different attacks and the security of Blockchains, proposing applications of Blockchains in various fields and so on... However, these are not a part of the current study.
+
+*Before diving right into the research on scaling Blockchains, 
+let's try understanding Blockchains and their current design at a high level.*
+
+## Blockchains Overview ##
 
 1. [Blockchains](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#blockchains)  
 2. [Design and Architecture](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#design-and-architecture)  
@@ -50,33 +90,6 @@ Thus, the history of transactions are maintained by every participant as an immu
 Blockchains suffer from poor performance and low scalability. While centralized payment systems process tens of thousands of transactions per second, blockchain based decentralized payment systems hardly support tens of transactions per second. Notice that every full node in the network has to verify the new blocks, transactions, re-execute the transactions, update their local states and extend the blockchain. Even with more full nodes in the network, since the work is not shared between the full nodes, the systems do not scale. Notice that, every full node participates in the consensus, making consensus a bottleneck for scaling Blockchains.
 
 With the increasing adoption of Blockchains for various applications and the increasing demand for cryptocurrencies, the scalability of Blockchains has taken the center stage of Blockchain research. There are numerous research papers along different parallels, aiming at scaling blockchains.
-
-## Repo Contents ##
-
-The efforts towards scaling blockchains are placed along three axes. Papers proposing new architectures for Blockchains are summarized in the Blockchain Architecture sub directory. Papers proposing efficient and scalable alternatives to Nakamoto consensus are summarized under the Scalable Consensus sub directory. Finally, papers proposing efficient storage and network alternatives to increase the throughput of the Blockchains are summarized under the third category.
-  
-1. Blockchain Architecture  
-2. Scalable Consensus
-3. General Ideas in Blockchains  
-
-## Quick Summary ##
-
-*Let's take a quick look at the major contributions towards scaling Blockchains.*
-
-| Paper         | Throughput   | Txn Confirmation Latency |
-| ------------- | ------------ | -----------------|
-| [Algorand](https://dl.acm.org/citation.cfm?id=3132757)              | ~  875       |  ~ 1 minute      |
-| [Conflux](https://arxiv.org/abs/1805.03870)                         | ~ 6000       | 4.5 - 7.5 minutes|
-| [HoneyBadger](https://dl.acm.org/citation.cfm?id=2978399)           | ~ 1500       |  < 6 minutes     |
-| [HyperLedger](https://dl.acm.org/citation.cfm?id=3190538)           | ~ 2500       | 0.3 - 0.5 seconds|
-| [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) | ~ 1000       | ~ 1 minute       |
-
-**Note:** The results are from the papers for a configuration with around 100 nodes. However, the numbers are not presented for a direct comparison between the systems, but for an average throughput and latency estimates of the current state-of-the-art.
-
-## Details ##
-
-There is a lot of interesting ongoing work on analyzing different attacks and the security of Blockchains, proposing applications of Blockchains in various fields and so on... However, these are not a part of the current study.
-
 
 # Contact Info 
 
