@@ -47,11 +47,11 @@ Here's the list of papers that are summarized:
 | [HyperLedger](https://dl.acm.org/citation.cfm?id=3190538)           | ~ 2500       | 0.3 - 0.5 seconds|
 | [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) | ~ 1000       | ~ 1 minute       |
 
-**Note:** The results are from the papers for a configuration with around 100 nodes. However, the numbers are not presented for a direct comparison between the systems, but for an average throughput and latency estimates of the current state-of-the-art.
-
-## Details ##
-
-There is a lot of interesting ongoing work on analyzing different attacks and the security of Blockchains, proposing applications of Blockchains in various fields and so on... However, these are not a part of the current study.
+**Note:** 
+- The results are from the papers for a configuration with around 100 nodes. However, the numbers are not presented for a 
+direct comparison between the systems, but for an average throughput and latency estimates of the current state-of-the-art.
+- There is a lot of interesting ongoing work on analyzing different attacks and the security of Blockchains, proposing 
+applications of Blockchains in various fields and so on... However, these are not a part of the current study.
 
 
 ## Blockchains Overview ##
