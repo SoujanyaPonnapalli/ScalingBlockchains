@@ -21,11 +21,10 @@ Here's the list of papers that are summarized:
 **[Consensus](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Consensus)**
 
   - [Algorand](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Algorand.md):
-   Byzantine Agreement is performed amongst a few users, selected using a mechanism based on Verifiable Random Functions.
+   Byzantine Agreement amongst a few users, selected using Verifiable Random Functions.
    
   - [Bitcoin-NG](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/BitcoinNG.md): 
-  Time is divided into epochs, where each epoch has a single leader selected using Nakamoto Consensus, responsible for 
-  serializing transactions unilaterally until a new leader is chosen.
+  A leader is selected using Nakamoto consensus and serializes transactions until a new leader is chosen.
   
   - [Conflux](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Conflux.md):
   Concurrent blocks are optimistically processed without discarding any as forks. 
