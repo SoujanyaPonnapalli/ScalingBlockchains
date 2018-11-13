@@ -39,10 +39,11 @@ Here's the list of papers that are summarized:
 
 There is a lot of interesting ongoing work on analyzing different attacks and the security of Blockchains, proposing applications of Blockchains in various fields and so on... However, these are not a part of the current study.
 
-*Before diving right into the research on scaling Blockchains, 
-let's try understanding Blockchains and their current design at a high level.*
 
 ## Blockchains Overview ##
+
+*Before diving right into the research on scaling Blockchains, 
+let's try understanding Blockchains and their current design at a high level.*
 
 1. [Blockchains](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#blockchains)  
 2. [Design and Architecture](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#design-and-architecture)  
