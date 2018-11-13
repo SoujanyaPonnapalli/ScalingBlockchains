@@ -49,9 +49,7 @@ let's try understanding Blockchains and their current design at a high level.*
 2. [Design and Architecture](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#design-and-architecture)  
 3. [Limitations and Research Trends](https://github.com/SoujanyaPonnapalli/MyBlockchainPage/blob/master/README.md#limitations-and-research-trends)
     1. [Scalability](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#scalability)  
-    2. [Repository Contents](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#repo-contents)
-    3. [Quick Summary](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#quick-summary)
-6. [Contact Info](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#contact-info)
+4. [Contact Info](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#contact-info)
 
 # Blockchains
 
