@@ -21,7 +21,7 @@ Here's the list of papers that are summarized:
 **[Consensus](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Consensus)**
 
   - [Algorand](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Algorand.md):
-   Byzantine Agreement amongst a few users, selected using Verifiable Random Functions.
+   Byzantine agreement amongst a few users, selected using verifiable random functions.
    
   - [Bitcoin-NG](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/BitcoinNG.md): 
   A leader is selected using Nakamoto consensus and serializes transactions until a new leader is chosen.
