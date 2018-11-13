@@ -12,12 +12,13 @@ consensus are summarized under the Consensus directory. Finally, papers proposin
 alternatives to increase the throughput of the Blockchains are summarized in the General sub directory.
 
 Here's the list of papers that are summarized:
-- [Blockchain Architecture](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Architecture)
+
+[Blockchain Architecture](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Architecture)
 
   - [Hyperledger](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Architecture/HyperLedger.md): 
   A novel execute-order-validate architecture for permissioned blockchain systems.
   
-- [Scalable Consensus](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Consensus)
+[Scalable Consensus](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Consensus)
 
   - [Algorand](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Algorand.md):
    Byzantine Agreement is performed amongst a few users, selected using a mechanism based on Verifiable Random Functions.
@@ -29,7 +30,7 @@ Here's the list of papers that are summarized:
   - [Conflux](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Conflux.md):
   Concurrent blocks are optimistically processed without discarding any as forks. 
   
-- [General Ideas in Blockchains](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/General)
+[General Ideas in Blockchains](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/General)
   
   - [GHOST](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/General/GHOST.md):
   Novel construction and reorganization of blockchain (Greedy Heaviest-Observed Sub-Tree)
