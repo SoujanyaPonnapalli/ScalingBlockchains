@@ -6,10 +6,10 @@ This repository summarizes the papers aiming at scaling blockchains.
 
 ## Repository Contents ##
 
-The efforts towards scaling blockchains are placed along three axes. Papers proposing new architectures for Blockchains are 
-summarized in the Architecture directory. Papers proposing efficient and scalable alternatives to Nakamoto 
-consensus are summarized under the Consensus directory. Finally, papers proposing general ideas and 
-alternatives to increase the throughput of the Blockchains are summarized in the General sub directory.
+The efforts towards scaling blockchains are placed along three axes. 
+- Papers proposing new architectures for Blockchains are summarized in the Architecture directory. 
+- Papers proposing efficient and scalable alternatives to Nakamoto consensus are summarized under the Consensus directory.
+- Finally, papers proposing general ideas towards scaling Blockchains are summarized in the General directory.
 
 Here's the list of papers that are summarized:
 
