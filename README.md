@@ -9,7 +9,7 @@ This repository summarizes the papers aiming at scaling blockchains.
 The efforts towards scaling blockchains are placed along three axes. 
 - *Architecture*: New architectures for scalable Blockchains. 
 - *Consensus*: Efficient and scalable alternatives to Nakamoto consensus.
-- *General*: Finally, papers proposing general ideas and alternatives towards scaling Blockchains.
+- *General*: General ideas and alternatives towards scaling Blockchains.
 
 Here's the list of papers that are summarized:
 
