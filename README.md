@@ -13,13 +13,26 @@ alternatives to increase the throughput of the Blockchains are summarized in the
 
 Here's the list of papers that are summarized:
 - [Blockchain Architecture](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Architecture)
-  - [Hyperledger](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Architecture/HyperLedger.md)
+
+  - [Hyperledger](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Architecture/HyperLedger.md): 
+  A novel execute-order-validate architecture for permissioned blockchain systems.
+  
 - [Scalable Consensus](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Consensus)
-  - [Algorand](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Algorand.md)
-  - [Bitcoin-NG](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/BitcoinNG.md)
-  - [Conflux](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Conflux.md)
+
+  - [Algorand](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Algorand.md):
+   Byzantine Agreement is performed amongst a few users, selected using a mechanism based on Verifiable Random Functions.
+   
+  - [Bitcoin-NG](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/BitcoinNG.md): 
+  Time is divided into epochs, where each epoch has a single leader selected using Nakamoto Consensus, responsible for 
+  serializing transactions unilaterally until a new leader is chosen.
+  
+  - [Conflux](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Conflux.md):
+  Concurrent blocks are optimistically processed without discarding any as forks. 
+  
 - [General Ideas in Blockchains](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/General)
-  - [GHOST](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/General/GHOST.md)
+  
+  - [GHOST](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/General/GHOST.md):
+  Novel construction and reorganization of blockchain (Greedy Heaviest-Observed Sub-Tree)
 
 ## Quick Summary ##
 
@@ -48,7 +61,6 @@ let's try understanding Blockchains and their current design at a high level.*
 1. [Blockchains](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#blockchains)  
 2. [Design and Architecture](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#design-and-architecture)  
 3. [Limitations and Research Trends](https://github.com/SoujanyaPonnapalli/MyBlockchainPage/blob/master/README.md#limitations-and-research-trends)
-    1. [Scalability](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#scalability)  
 4. [Contact Info](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#contact-info)
 
 # Blockchains
