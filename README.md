@@ -7,18 +7,13 @@ This repository summarizes the papers aiming at scaling blockchains.
 ## Repository Contents ##
 
 The efforts towards scaling blockchains are placed along three axes. 
-- *Architecture*: New architectures for scalable Blockchains. 
-- *Consensus*: Efficient and scalable alternatives to Nakamoto consensus.
-- *General*: General ideas and alternatives towards scaling Blockchains.
 
-Here's the list of papers that are summarized:
-
-**[Architecture](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Architecture)**
+**[Architecture](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Architecture) (New architectures for scalable Blockchains)**
 
   - [Hyperledger](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Architecture/HyperLedger.md): 
   A novel execute-order-validate architecture for permissioned blockchain systems.
   
-**[Consensus](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Consensus)**
+**[Consensus](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/Consensus) (Efficient and scalable alternatives to Nakamoto consensus)**
 
   - [Algorand](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Algorand.md):
    Byzantine agreement amongst a few users, selected using verifiable random functions.
@@ -29,7 +24,7 @@ Here's the list of papers that are summarized:
   - [Conflux](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Consensus/Conflux.md):
   Concurrent blocks are optimistically processed without discarding any as forks. 
   
-**[General](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/General)**
+**[General](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/tree/master/General) (General ideas and alternatives towards scaling Blockchains)**
   
   - [GHOST](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/General/GHOST.md):
   Novel construction and reorganization of blockchain (Greedy Heaviest-Observed Sub-Tree)
