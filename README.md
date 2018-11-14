@@ -42,15 +42,17 @@ latencies and the configuration parameters.
 | [HyperLedger](https://dl.acm.org/citation.cfm?id=3190538)           | ~ 2500 | 0.3 - 0.5 seconds|
 | [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) | ~ 1000 | ~ 1 minute       |
 
-A summary of the maximum number of peers reported in the paper.
+A summary of the maximum number of peers or nodes reported in the paper. If the scalability is reported against the total 
+number of nodes in the network, then the type of the nodes is "T". If scalability is reported against the number of 
+participating in the consensus, then the type of the nodes is "C".
 
-| Paper                                                               | # Peers |
-| ------------------------------------------------------------------- | ------- |
-| [Algorand](https://dl.acm.org/citation.cfm?id=3132757)              | ~  875  | 
-| [Conflux](https://arxiv.org/abs/1805.03870)                         | ~ 6000  | 
-| [HoneyBadger](https://dl.acm.org/citation.cfm?id=2978399)           | ~ 1500  |  
-| [HyperLedger](https://dl.acm.org/citation.cfm?id=3190538)           | ~ 2500  | 
-| [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) | ~ 1000  | 
+| Paper                                                               | # Nodes (Types) | Config (VMs, nodes per VM)| Span|
+| --------------------------------------------------------------------| ---------- |--------------------------------|-----|
+| [Algorand](https://dl.acm.org/citation.cfm?id=3132757)              |   500,000 (T)| 1000, 500 | 20 cities    |
+| [Conflux](https://arxiv.org/abs/1805.03870)                         |    20,000 (T)|  800,  25 | 20 cities    |
+| [HoneyBadger](https://dl.acm.org/citation.cfm?id=2978399)           |       104 (C)|  104,   1 |  5 continents |
+| [HyperLedger](https://dl.acm.org/citation.cfm?id=3190538)           |3 (C), 100 (T)| 20 per datacenter |  5 datacenters |
+| [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) |      1800 (T)|   60,  30 | Limit bandwidth, latency|
 
 **Note:** 
 - The results are from the papers for a configuration with around 100 nodes. However, the numbers are not presented for a 
