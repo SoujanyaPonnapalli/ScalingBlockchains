@@ -31,16 +31,16 @@ This repository summarizes the papers aiming at scaling blockchains. The efforts
 
 *Let's take a quick look at the major contributions towards scaling blockchains.*
 
-A summary of the peak reported throughput (number of transactions per second), corresponding transaction confirmation 
+A summary of the peak reported throughput (number of transactions per second or tps), corresponding transaction confirmation 
 latencies and the configuration parameters.
 
-| Paper         | Peak Throughput   | Txn Confirmation Latency | Configuration |
-| ------------- | ----------------- | -------------------------|---------------|
-| [Algorand](https://dl.acm.org/citation.cfm?id=3132757)              | ~  875 |  ~ 1 minute      |
-| [Conflux](https://arxiv.org/abs/1805.03870)                         | ~ 6000 | 4.5 - 7.5 minutes|
-| [HoneyBadger](https://dl.acm.org/citation.cfm?id=2978399)           | ~ 1500 |  < 6 minutes     |
-| [HyperLedger](https://dl.acm.org/citation.cfm?id=3190538)           | ~ 2500 | 0.3 - 0.5 seconds|
-| [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) | ~ 1000 | ~ 1 minute       |
+| Paper         | Peak Throughput (tps)  | Txn Confirmation Latency | Block Size, Rate of Blocks (Details) |
+| ------------- | ---------------------- | -------------------------|------------------------------|
+| [Algorand](https://dl.acm.org/citation.cfm?id=3132757)              | 875 |  ~ 1 minute   | 10 MB, 10 minutes |
+| [Conflux](https://arxiv.org/abs/1805.03870)                         | 6400 | 4.5 - 7.5 minutes| 4MB, 2.5 seconds |
+| [HoneyBadger](https://dl.acm.org/citation.cfm?id=2978399)           | 1500 |  < 6 minutes     |  (104 nodes) |
+| [HyperLedger](https://dl.acm.org/citation.cfm?id=3190538)           | 3000 | 0.3 - 0.5 seconds| 2 MB (32 vCPUs) |
+| [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) | 13,000 | ~ 1 minute     |16 MB  (800 hosts, 25 shards, 12.5% adversary) |
 
 A summary of the maximum number of peers or nodes reported in the paper. If the scalability is reported against the total 
 number of nodes in the network, then the type of the nodes is "T". If scalability is reported against the number of 
