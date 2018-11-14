@@ -46,7 +46,7 @@ A summary of the maximum number of peers or nodes reported in the paper. If the 
 number of nodes in the network, then the type of the nodes is "T". If scalability is reported against the number of 
 participating in the consensus, then the type of the nodes is "C".
 
-| Paper                                                               | # Nodes (Types) | Config (VMs, nodes per VM)| Span|
+| Paper                                                    | # Nodes (Type) | Config (VMs, nodes per VM)| Geo-distribution|
 | --------------------------------------------------------------------| ---------- |--------------------------------|-----|
 | [Algorand](https://dl.acm.org/citation.cfm?id=3132757)              |   500,000 (T)| 1000, 500 | 20 cities    |
 | [Conflux](https://arxiv.org/abs/1805.03870)                         |    20,000 (T)|  800,  25 | 20 cities    |
