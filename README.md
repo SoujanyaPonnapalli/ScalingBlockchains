@@ -43,7 +43,7 @@ latencies and the configuration parameters.
 | [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) | 13,000 | ~ 1 minute     |16 MB  (800 hosts, 25 shards, 12.5% adversary) |
 
 A summary of the maximum number of peers or nodes reported in the paper. If the scalability is reported against the total 
-number of nodes in the network, then the type of the nodes is "T". If scalability is reported against the number of 
+number of nodes in the network, then the type of the nodes is "T". If scalability is reported against the number of nodes
 participating in the consensus, then the type of the nodes is "C".
 
 | Paper                                                    | # Nodes (Type) | Config (VMs, nodes per VM)| Geo-distribution|
@@ -55,8 +55,7 @@ participating in the consensus, then the type of the nodes is "C".
 | [OmniLedger](https://ieeexplore.ieee.org/abstract/document/8418625) |      1800 (T)|   60,  30 | Limit bandwidth, latency|
 
 **Note:** 
-- The results are from the papers for a configuration with around 100 nodes. However, the numbers are not presented for a 
-direct comparison between the systems, but for an average throughput and latency estimates of the current state-of-the-art.
+- The numbers are not presented for a direct comparison between the systems.
 - There is a lot of interesting ongoing work on analyzing different attacks and the security of blockchains, proposing 
 applications of blockchains in various fields and so on... However, these are not a part of the current study.
 
