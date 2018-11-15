@@ -2,6 +2,7 @@
 
 *Scalability is one of the major limitations of blockchains. This repository summarizes the ongoing research on increasing the scalability of blockchains and provides a high level overview on blockchains.* 
 
+*For a more detailed summary of Blockchains, please the [complete overview](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Overview.md)*
 ## Repository Contents 
 
 This repository summarizes the papers aiming at scaling blockchains. The efforts towards scaling blockchains are placed along these three axes: 
