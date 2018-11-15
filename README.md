@@ -2,7 +2,8 @@
 
 *Scalability is one of the major limitations of blockchains. This repository summarizes the ongoing research on increasing the scalability of blockchains and provides a high level overview on blockchains.* 
 
-Blockchains are public, distributed, [decentralized](https://en.wikipedia.org/wiki/Decentralization) ledgers which record data 
+[Blockchains](https://en.wikipedia.org/wiki/Blockchain) are public, distributed, 
+[decentralized](https://en.wikipedia.org/wiki/Decentralization) ledgers which record data 
 that cannot be tampered with. Data is stored in blocks, where each block is built on top of a previous block, forming a 
 chain of blocks (blockchain). Nodes in a distributed peer-to-peer network agree on a chain of blocks (via consensus). 
 Consensus establishes a single view of the data on the blockchain with multiple, mutually untrusting nodes in the nework.
