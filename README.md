@@ -2,7 +2,15 @@
 
 *Scalability is one of the major limitations of blockchains. This repository summarizes the ongoing research on increasing the scalability of blockchains and provides a high level overview on blockchains.* 
 
-*For a more detailed summary on blockchains, please read the [Detailed Overview.](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Overview.md)*
+Blockchains are public, distributed, [decentralized](https://en.wikipedia.org/wiki/Decentralization) ledgers which record data 
+that cannot be tampered with. Data is stored in blocks, where each block is built on top of a previous block, forming a 
+chain of blocks (blockchain). Nodes in a distributed peer-to-peer network agree on a chain of blocks (via consensus). 
+Consensus establishes a single view of the data on the blockchain with multiple, mutually untrusting nodes in the nework.
+
+Blockchains suffer with poor performance and low scalability as they form a network of replicated state machines and also 
+because of the inherent sequentiality in blockchains (Blocks are sequentially built on top of one another), as explained in 
+detail in the [overview on blockchains.](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Overview.md)
+
 ## Repository Contents 
 
 This repository summarizes the papers aiming at scaling blockchains. The efforts towards scaling blockchains are placed along these three axes: 
