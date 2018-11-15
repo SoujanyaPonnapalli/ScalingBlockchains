@@ -72,7 +72,9 @@ For more details on the trust and fault model and individual components of Fabri
 
 ## Related Work
 
-Tendermint, Quorum and Chain are all permissioned blockchain variants with the order-execute architecture. Ethereum on the other hand is the permissionless variant with order-execute architecture. Most of the current state-of-the-art Bitcoin, Ethereum, ZeroCash have the order-execute architecture, inheriting its limitations.
+Tendermint, Quorum and Chain are all permissioned blockchain variants with the order-execute architecture. Ethereum on the 
+other hand is the permissionless variant with order-execute architecture. Most of the current state-of-the-art Bitcoin, 
+Ethereum, ZeroCash have the order-execute architecture, inheriting its limitations.
 
 ## Evaluation
 
