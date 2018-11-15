@@ -1,6 +1,8 @@
 ## [Hyperledger Fabric](https://dl.acm.org/citation.cfm?id=3190538): A Distributed Operating System for Permissioned Blockchains
 
-Fabric: A blockchain system supporting modular consensus protocols, allowing the system to be tailored to specific use cases and trust models. Proposes a novel execute-order-validate architecture for permissioned blockchain systems, scaling them to support ~3500 tps. Supports applications written in standard programming languages.
+Fabric: A blockchain system supporting modular consensus protocols, allowing the system to be tailored to specific use cases 
+and trust models. Proposes a novel execute-order-validate architecture for permissioned blockchain systems, scaling them to 
+support ~3500 tps. Supports applications written in standard programming languages.
 
 ## Problems Identified
 
