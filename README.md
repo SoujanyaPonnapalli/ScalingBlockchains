@@ -68,7 +68,7 @@ let's try understanding blockchains and their current design at a high level.*
 
 1. [Blockchains](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#blockchains)  
 2. [Design and Architecture](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#design-and-architecture)  
-3. [Limitations and Research Trends](https://github.com/SoujanyaPonnapalli/MyBlockchainPage/blob/master/README.md#limitations-and-research-trends)
+3. [Scalability Limitation of Blockchains](https://github.com/SoujanyaPonnapalli/MyBlockchainPage/blob/master/README.md#scalability-limitation-of-blockchains)
 4. [Contact Info](https://github.com/SoujanyaPonnapalli/MyBlockchainPage#contact-info)
 
 # Blockchains
@@ -151,12 +151,10 @@ party. All the peers in the network agree on the history of transactions and agr
 of the peers in the network are not compromised. To conclude, with these key ideas, blockchains are used to design 
 cryptographically secure, trustless, peer to peer payment system.
 
-# Limitations and Research Trends 
+# Scalability Limitation of Blockchains
 
 *Now that we understand the design and architecture of blockchain based systems, let's understand the limitations on the 
 scalability of blockchains.*
-
-## Scalability ##
 
 Blockchains suffer from poor performance and low scalability. While centralized payment systems process tens of thousands of 
 transactions per second, blockchain based decentralized payment systems hardly support tens of transactions per second. Notice 
