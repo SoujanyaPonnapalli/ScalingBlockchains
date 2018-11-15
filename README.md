@@ -8,9 +8,10 @@ that cannot be tampered with. Data is stored in blocks, where each block is buil
 chain of blocks (blockchain). Nodes in a distributed peer-to-peer network agree on a chain of blocks (via consensus). 
 Consensus establishes a single view of the data on the blockchain with multiple, mutually untrusting nodes in the nework.
 
-Blockchains suffer with poor performance and low scalability as they form a network of replicated state machines and also 
-because of the inherent sequentiality in blockchains (Blocks are sequentially built on top of one another), as explained in 
-detail in the [overview on blockchains.](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Overview.md)
+Blockchains suffer with poor performance and low scalability as they form a network of **replicated state machines** and run 
+**consensus** amongst all of them and also because of the **inherent sequentiality** in blockchains (Blocks are 
+sequentially built on top of one another), as explained in detail in the 
+[overview on blockchains.](https://github.com/SoujanyaPonnapalli/ScalingBlockchains/blob/master/Overview.md)
 
 ## Repository Contents 
 
