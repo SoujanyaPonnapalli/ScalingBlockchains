@@ -67,6 +67,9 @@ participating in the consensus, then the type of the nodes is "C".
 
 **Note:** 
 - The numbers are not presented for a direct comparison between the systems.
+- Comparing different blockchain based systems is very challenging as there are numerous aspects affecting the transaction 
+throughput of these systems, as summarized in this 
+[blog post](https://medium.com/algorand/towards-a-unified-metric-for-performance-evaluation-of-proof-of-stake-blockchains-e29a405d73ba).
 - There is a lot of interesting ongoing work on analyzing different attacks and the security of blockchains, proposing 
 applications of blockchains in various fields and so on... However, these are not a part of the current study.
 
